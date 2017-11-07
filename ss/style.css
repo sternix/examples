@@ -1,0 +1,22 @@
+* {
+	padding:2px;
+	margin:2px;
+}
+
+table, tr, th, td {
+	border:1px solid black;
+	border-collapse: collapse;
+}
+
+label {
+	display:block;
+}
+
+input[type=submit] {
+	display:block;
+}
+
+#tblItems {
+	width:600px;
+	padding:2px;
+}
