@@ -20,10 +20,13 @@ document.addEventListener("DOMContentLoaded",function() {
 				break;
 			case EventSource.CLOSED:
 				event.target.close();
-				setTimeout(connect,3000);
+				timer = setTimeout(connect,3000);
 				break;
 		}
 	}
 
 	connect();
 });
+
+
+
