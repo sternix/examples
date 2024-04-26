@@ -10,7 +10,7 @@ import (
 func sse(w http.ResponseWriter, req *http.Request) {
 	f, ok := w.(http.Flusher)
 	if !ok {
-		http.Error(w, "Streaming Unsupported", http.StatusInternalServerError)
+		http.Error(w, "Streaming Not Supported", http.StatusInternalServerError)
 		return
 	}
 
